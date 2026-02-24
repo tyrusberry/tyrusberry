@@ -1,0 +1,16 @@
+<title>Sierpinski Gasket</title>
+<H2>Sierpinski Gasket</H2>
+Since the contractions of the triangle (which, when iterated, converge to SG) are not regions in the plane, they had to be modified.  We decided to modify them by increasing the contraction factor thus resulting in a slight overlap between the triangles at each iteration (as opposed to meeting at their vertices as in SG).  This overlap is controlled by two variables, the first is called the Initial Overlap, and indicates the percentage of the total side length at level 1 which is overlap.  The second variable is called Overlap Rate, which determines at what rate the overlaps shrink as you move from level n to level n+1.  The overlap rate must be less than 1/2 or eventually the structure of region will no longer give finer approximations.  Note that the regions approach SG as Initial Overlap approaches zero but not as Overlap Rate approaches zero, thus the Initial Overlap was more thoroughly explored (a range between .02 (2%) and .0005 (.05%) depending on level).  The Matlab code takes 4 input variables and is typically used as follows:<br><br>
+[p,t,v,l] = SG(<a href="terminology.html">Level</a>,InitialOverlap,OverlapRate,# of <a href="terminology.html">Refinements</a>);<br><br>
+For information on what you can do with these variables or to see how to use the included data files without running the code see the <a href="filetutorial.html">file tutorial</a>.
+<div class="itemizedlist">
+        <ul type="circle">
+	<li><a href="sgasket.html">Basic Raw Data (levels 2-5)</a> (<a href="data/sgasket.sxc">Calc .sxc file</a>) - <I> Note, all Overlap Rates = 1/5</I></li>
+        <li><a href="sgasketoverlaps.html">Overlap Raw Data (levels 2-4)</a> (<a href="data/sgasketoverlaps.sxc">Calc .sxc file</a>) - <I> Note, all Overlap Rates = 1/2</I></li>
+	<li>Data files</li>
+	<li><a href="code/SG.m">Matlab code</a></li>
+	<li>Eigenvalue Counting Functions</li>
+	<li>Eigenfunction Pictures</li>
+	</ul>
+</div>
+<br><br><a href="index.html">Home</a>

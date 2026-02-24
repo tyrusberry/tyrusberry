@@ -1,0 +1,17 @@
+<table><tr><td>
+<img src="pictures/manraypoem.jpg"></td><td width=200><H3>Terminology:</H3>
+This page attempts to clarify some of the jargon specific to the outer approximation, PDEToolbox, and finite element method which has become second nature over the course of the summer.  It does not attempt to clarify general fractal jargon.  It is suggested that you read the brief theoretical overview if you are not familiar with the outer approximation.</td>
+</table><BR>
+<I>Finite Element Method (FEM)</I>: Method of approximating the spectra and corresponding eigenfunctions of regions in the plane.  In this project Matlab's PDEToolbox (which employs FEM) is taken as a black box for producing spectra and eigenfunctions.
+<br><br>
+<I>Level</I>: We used Level to specify a domain from the sequence of domains approximating the fractal.  Level zero refers to the initial domain, ie. the triangle is level zero for SG.  The eigenfunction displayed on the home page is on the level 3 domain approximating SG.
+<br><br>
+<I>Localized Eigenfunction</I>: An eigenfunction with small support.
+<br><br>
+<I>Normalized Spectrum</I>: The normalized spectrum refers to the result of dividing each eigenvalue by the first non-zero eigenvalue; this is meant to allow comparison of spectra up to a multiplicative constant.
+<br><br>
+<I>Refinements</I>: The finite element method requires that the domain be triangulated, this triangulation can then be refined as many times as the computer has memory to store (typically around 4-5 max).  More refinements implies a finer triangulation which implies greater accuracy of the data.  The triangulations are not uniform.
+<br><br>
+<I>Spectral Gaps</I>: A "gap" in the spectrum is an infinite sequence of non-overlapping pairs of eigenvalues where there are no eigenvalues between each pair and the distance between the two eigenvalues in the pair becomes arbitrarily large.
+<br><br><H5><I>Note: The poem pictured above was composed by Man Ray, an American dadaist in Paris, in 1924.</I><H5>
+<br><a href="index.html">Home</a>
